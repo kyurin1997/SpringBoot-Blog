@@ -122,6 +122,14 @@ public class HomeController extends BaseController {
         return "blog/tags";
     }
 
+    @ApiOperation("教程详情页")
+    @GetMapping(value = "/course")
+    public String course(HttpServletRequest request){
+
+
+        return "blog/course";
+    }
+
     @ApiOperation("标签详情页")
     @GetMapping(value = "/tags/{name}")
     public String tagsDetail(
