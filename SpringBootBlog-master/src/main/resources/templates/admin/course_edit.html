@@ -73,7 +73,7 @@
                                         data-placeholder="请选择文章类型..">
                                     <th:block th:if="${null == contents}">
                                         <option value="post" selected="selected">默认博文</option>
-                                        <option value="photo" >作品</option>
+                                        <option value="photo" >作 品</option>
                                     </th:block>
                                     <th:block th:unless="${null == contents}">
                                         <option value="post" th:selected="${null != contents and contents.type=='post'} ? true : false">默认博文</option>
